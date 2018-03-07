@@ -1,0 +1,161 @@
+#!/bin/bash
+echo "Abshir Ali"
+echo "My first script"
+echo "where we at"
+pwd
+echo "lets create our first file"
+touch file1
+echo "check the file you just created"
+ls
+echo "lets create our second file"
+touch file2
+echo "run file1"
+cat file1
+
+echo "copy file"
+cp file1 dir1
+echo "Delete file"
+rm file1
+echo ""
+cd dir1
+echo "Where we are"
+pwd
+echo "move file1"
+mv file1 ..
+echo "change the directory"
+cd ..
+echo "moved back file1 to his oroginal spot"
+mkdir dir1
+#Thats for first script lets move to the secon one
+
+echo "Hello World. this is the 3rd shell script" > /tmp/hello.txt
+cat hello.txt
+echo "Lets see where we at"
+pwd
+echo "give me the list of what we have"
+ls
+echo "Lets move to /tmp"
+cd /tmp
+pwd
+cp -v /tmp/hello/hello.txt /tmp/hello/hello.txt
+echo "Lets make a directory and put all our intput togather"
+mv /tmp/hello/hello.txt
+echo "List the entries in hello"
+ls -al /tmp/hello
+echo "create text file"
+touch teacher.txt
+echo "copy teacher file to hello file"
+cp hello.txt teacher.txt
+echo "where we are at now"
+ls
+echo "lets move some files and play aroud moving some stuff"
+mv hello.txt teacher.txt
+echo "Lets check our disk space"
+df -m
+echo "Lets check our system"
+
+
+#That was the second script lets move down to the third script
+
+echo "Script 4"
+# Show list files.
+ ls
+# Show permisssions of all files in directory.
+ ls -la
+# Show list directory dev names.
+ ls -l /dev
+# Show redirect unneeded or removol intended data
+ /dev/null
+# Show creating a directory Week4
+ mkdir Week4
+# Show creat file
+ touch Mussie.sh
+# copy files
+ cp Mussie.sh week4.sh
+# Show a command list
+ lsblk -a > Mussie.sh
+# Show change to home directory
+ cd
+# Show a Support filesystem
+ blkid -k 
+# Show total number of blocks to copy
+ count=nun
+# Show skip past the first num blocks or not copy
+ skip=num
+
+# Show to monitor command Kernel waht to do?
+ udevadm monitor
+# show view files
+ cat Mussie.sh
+# Show solid-stated disks
+ cat /syst/block/sdf/sdf2/start
+# Creating a filesystem
+ mkfs -t ext4 /dev/sdf2
+# Sow us what files in side mkfs
+ ls -l /sbin/mkfs.*
+# Show mounting a filesystem
+ mount
+# Show view Universally uniue identify
+ Sudo blkid
+# Show the size of harddrive  
+ df
+# Checking and repairing filesystem 
+fsck /dev/sdb1
+
+# Another weekly scripts
+echo "Week 5 script"
+
+sleep 5s
+cat /var/log/kern.log
+echo ""
+cat /proc/cmdline
+echo "this chapter is karnel command line"
+cat /proc/cmdline
+echo "lets check the result"
+dmesg
+echo "lets check the grub command"
+grub --help
+echo "lets check as well grub configuration file"
+grub-mkconfig -v
+echo "Now look what the grub installation"
+grub-install
+
+# so far so good couple more scripts. move to the next
+echo "hello Week 6"
+echo "lets check our system run level one first"
+who -r
+echo "switch to directory as usaul"
+cd /etc/systemd
+echo "change System V
+cd /etc/inittab
+echo "check all active units"
+systemctl list-units
+echo "View your current systemd config search path
+systemctl -p Unipath show
+
+
+#last but not the least
+ 
+echo "My week 7 Script"
+echo "where we at t start our journey"
+pwd
+echo "lets test the system logger by sendig log message manually"
+logger -p daemon.info something bad just happened
+echo "lets load additional configuration files"
+IncludeConfig /etc/rsyslog.d/*.conf
+echo "lets create plain text"
+/etc/passwd
+echo " we going to create encrypted password"
+/etc/shadow
+echo "lets set our RTC to our karne's UTC clock"
+hwclock --hwtosys --utc
+echo "now we gonna check current time in seconds"
+date +%s
+echo "lets set time zone"
+TZ=US/Central date
+echo "set your system time from the network with ntpdate"
+hwclock --systohc --utc
+
+echo "Good job sit back i will shutdown the machine for yu"
+shutdown -r +2
+
